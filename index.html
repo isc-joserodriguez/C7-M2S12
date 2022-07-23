@@ -46,7 +46,15 @@
             >
               Registro
             </button>
-            <button class="btn btn-danger">Cerrar sesión</button>
+            <button
+              class="btn btn-danger"
+              onclick="
+            localStorage.clear();
+            document. location. reload() ;
+            "
+            >
+              Cerrar sesión
+            </button>
           </div>
         </div>
       </div>
@@ -287,6 +295,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
